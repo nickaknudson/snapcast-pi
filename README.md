@@ -1,5 +1,5 @@
 # snapcast-pi
-This project uses [buildroot](https://buildroot.org) to build snapcast for the raspberry pi. This example was tested with the raspberry pi zero, but has configurations for all raspberry pi models.
+This project uses [buildroot](https://buildroot.org) to build [snapcast](https://github.com/badaix/snapcast) for the raspberry pi. This example was tested with the raspberry pi zero, but has configurations for all raspberry pi models.
 
 # Build Environment
 For convenience the build environment has been containerized using [docker](https://www.docker.com/). To get started, simply [install docker for your machine](https://www.docker.com/products/overview#/install_the_platform).
