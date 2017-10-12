@@ -4,7 +4,7 @@ This project uses [buildroot](https://buildroot.org) to build [snapcast](https:/
 # Build Environment
 For convenience the build environment has been containerized using [docker](https://www.docker.com/). To get started, simply [install docker for your machine](https://www.docker.com/products/overview#/install_the_platform).
 
-For more information on the docker image or to build it yourself see [nickaknudson/buildroot-docker](https://github.com/nickaknudson/buildroot-docker) and [nickaknudson/buildroot](https://cloud.docker.com/app/nickaknudson/repository/docker/nickaknudson/buildroot/general).
+For more information on the docker image or to build it yourself see [github.com:nickaknudson/buildroot-docker](https://github.com/nickaknudson/buildroot-docker) and [cloud.docker.com:nickaknudson/buildroot](https://cloud.docker.com/app/nickaknudson/repository/docker/nickaknudson/buildroot/general).
 
 If you do not wish to use the provided docker container then you will need to install all of the [buildroot dependencies](https://buildroot.org/downloads/manual/manual.html#requirement) yourself.
 
@@ -13,9 +13,11 @@ Enter the build environment:
 
     docker run -it -v $(pwd):/home/buildroot/snapcast-pi -w /home/buildroot/snapcast-pi nickaknudson/buildroot /bin/bash
 
+    docker run -it -v $(pwd):/home/buildroot/snapcast-pi -v $(pwd)/buildroot-dl:/home/buildroot/buildroot-dl -w /home/buildroot/snapcast-pi nickaknudson/buildroot /bin/bash
+
 Clone buildroot:
 
-    BUILDROOT_VERSION=2016.11.2
+    BUILDROOT_VERSION=2017.05.2
     git clone --branch $BUILDROOT_VERSION --depth=1 git://git.buildroot.net/buildroot ~/buildroot
 
 Clone snapcast:
