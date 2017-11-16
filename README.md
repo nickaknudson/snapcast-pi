@@ -9,6 +9,10 @@ For more information on the docker image or to build it yourself see [nickaknuds
 If you do not wish to use the provided docker container then you will need to install all of the [buildroot dependencies](https://buildroot.org/downloads/manual/manual.html#requirement) yourself.
 
 # Building
+Clone this repository and change directory:
+
+    git clone https://github.com/nickaknudson/snapcast-pi.git && cd snapcast-pi
+
 Enter the build environment:
 
     docker run -it -v $(pwd):/home/buildroot/snapcast-pi -w /home/buildroot/snapcast-pi nickaknudson/buildroot /bin/bash
