@@ -16,6 +16,10 @@ Clone this repository and change directory:
 Enter the build environment:
 
     docker run -it -v $(pwd):/home/buildroot/snapcast-pi -w /home/buildroot/snapcast-pi nickaknudson/buildroot /bin/bash
+    
+(Use the following if using a SElinux-enabled host such as Fedora, RHEL, Scientific Linux, etc.:)
+
+    docker run -it -v $(pwd):/home/buildroot/snapcast-pi:Z -w /home/buildroot/snapcast-pi nickaknudson/buildroot /bin/bash
 
 Clone buildroot:
 
