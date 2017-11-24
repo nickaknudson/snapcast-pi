@@ -42,6 +42,10 @@ Build:
 
     make O=~/buildroot-output BR2_DL_DIR=~/buildroot-dl BR2_EXTERNAL=~/snapcast/buildroot:~/snapcast-pi/buildroot-external -C ~/buildroot
 
+Just build the snapcast binary:
+
+    make O=~/buildroot-output BR2_DL_DIR=~/buildroot-dl BR2_EXTERNAL=~/snapcast/buildroot:~/snapcast-pi/buildroot-external -C ~/buildroot package/snapcast
+
 # Flashing
 Copy the build products from the container back to the host machine:
 
