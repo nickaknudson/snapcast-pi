@@ -1,3 +1,5 @@
+# DEPRECATED IN FAVOR OF https://github.com/badaix/snapos/
+
 # snapcast-pi
 This project uses [buildroot](https://buildroot.org) to build [snapcast](https://github.com/badaix/snapcast) for the raspberry pi. This example was tested with the raspberry pi zero, but has configurations for all raspberry pi models.
 
